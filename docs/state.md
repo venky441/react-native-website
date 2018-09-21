@@ -23,7 +23,7 @@ class Blink extends Component {
       this.setState(previousState => {
         return { isShowingText: !previousState.isShowingText };
       });
-    }, 1000);
+    }, 1200);
   }
 
   render() {
@@ -37,15 +37,16 @@ class Blink extends Component {
 export default class BlinkApp extends Component {
   render() {
     return (
-      <View>
+       <View style={{alignItems: 'center',height:20,top:100,bottom:100}}>
         <Blink text='I love to blink' />
         <Blink text='Yes blinking is so great' />
-        <Blink text='Why did they ever take this out of HTML' />
-        <Blink text='Look at me look at me look at me' />
+        <Blink text='Why did they ever take' />
+        <Blink text='Look at me ' />
       </View>
     );
   }
 }
+
 
 // skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => BlinkApp);
